@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Product</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #response-container pre {
+            white-space: pre-wrap;
+            word-break: break-all;
+            padding: 1rem;
+            border-radius: 0.25rem;
+            background-color: #e5e7eb;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+
+    <div class="w-full max-w-xl bg-white shadow-2xl rounded-lg p-8">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center border-b pb-4">
+            🔍 View Product Details
+        </h1>
+
+        <form id="view-product-form" class="flex space-x-4 mb-8">
+            <div class="flex-grow">
+                <label for="view-name" class="block text-sm font-medium text-gray-700 mb-1">Product Name to View:</label>
+                <input type="text" id="view-name" name="name" required
+                       class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm"
+                       placeholder="Enter product name">
+            </div>
+            <div class="pt-6">
+                <button type="submit" id="submit-btn"
+                        class="py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 h-full transition duration-150 ease-in-out">
+                    View Details
+                </button>
+            </div>
+        </form>
+
+        <div>
+            <h2 class="text-xl font-semibold text-gray-700 mb-3">Server Response:</h2>
+            <div id="response-container" class="p-4 bg-gray-50 border border-gray-300 rounded-lg text-sm text-gray-800">
+                Enter a product name and click 'View Details'.
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/product/view_product.js"></script>
+</body>
+</html>

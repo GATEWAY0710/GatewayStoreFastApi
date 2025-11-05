@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Product</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #response-container pre {
+            white-space: pre-wrap;
+            word-break: break-all;
+            padding: 1rem;
+            border-radius: 0.25rem;
+            background-color: #e5e7eb;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+
+    <div class="w-full max-w-lg bg-white shadow-2xl rounded-lg p-8">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center border-b pb-4">
+            🛍️ Create New Product
+        </h1>
+
+        <form id="product-form" class="space-y-5">
+            <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Product Name:</label>
+                <input type="text" id="name" name="name" required
+                       class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                       placeholder="Enter product name">
+            </div>
+
+            <div>
+                <label for="description" class="block text-sm font-medium text-gray-700 mb-1">Description:</label>
+                <textarea id="description" name="description" rows="4" required
+                          class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                          placeholder="Describe the product"></textarea>
+            </div>
+
+            <div>
+                <label for="image" class="block text-sm font-medium text-gray-700 mb-1">Product Image:</label>
+                <input type="file" id="image" name="image" accept="image/*" required
+                       class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
+            </div>
+
+            <button type="submit" id="submit-btn"
+                    class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-150 ease-in-out">
+                Submit Product
+            </button>
+        </form>
+
+        <div class="mt-8 pt-6 border-t border-gray-200">
+            <h2 class="text-xl font-semibold text-gray-700 mb-3">Server Response:</h2>
+            <div id="response-container" class="p-4 bg-gray-50 border border-gray-300 rounded-lg text-sm text-gray-800">
+                Awaiting submission...
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/product/create_product.js"></script>
+</body>
+</html>

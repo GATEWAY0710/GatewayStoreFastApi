@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Stock Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #response-container pre {
+            white-space: pre-wrap;
+            word-break: break-all;
+            padding: 1rem;
+            border-radius: 0.25rem;
+            background-color: #e5e7eb;
+            font-size: 0.85rem;
+        }
+        .price-mono {
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+
+    <div class="w-full max-w-lg bg-white shadow-2xl rounded-lg p-8">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center border-b pb-4">
+            🔎 Get Stock Details by ID
+        </h1>
+
+        <form id="get-stock-form" class="flex space-x-4 mb-8">
+            <div class="flex-grow">
+                <label for="stock_id" class="block text-sm font-medium text-gray-700 mb-1">Stock ID:</label>
+                <input type="text" id="stock_id" name="stock_id" required
+                       class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-purple-500 focus:border-purple-500 sm:text-sm"
+                       placeholder="Enter the Stock ID">
+            </div>
+            <div class="pt-6">
+                <button type="submit" id="submit-btn"
+                        class="py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 h-full transition duration-150 ease-in-out">
+                    Get Details
+                </button>
+            </div>
+        </form>
+
+        <div>
+            <h2 class="text-xl font-semibold text-gray-700 mb-3">Server Response:</h2>
+            <div id="response-container" class="p-4 bg-gray-50 border border-gray-300 rounded-lg text-sm text-gray-800">
+                Enter a Stock ID and click 'Get Details'.
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/stock/get_stock.js"></script>
+</body>
+</html>

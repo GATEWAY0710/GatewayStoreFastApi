@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout | Gateway Store</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  .product-card { transition: transform 0.2s; }
+  .product-card:hover { transform: translateY(-4px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
+</style>
+</head>
+<body class="bg-gray-100 min-h-screen">
+
+<div class="max-w-5xl mx-auto py-10">
+  <h1 class="text-3xl font-bold text-indigo-600 mb-6">Checkout</h1>
+
+  <!-- Message -->
+  <div id="message" class="hidden mb-6 p-4 rounded-lg"></div>
+
+  <!-- Cart Section -->
+  <div id="cartSection">
+    <div id="emptyCart" class="text-center p-6 bg-white rounded-lg shadow-md mb-6 hidden">
+      Your cart is empty.
+    </div>
+
+    <div id="cartItems" class="space-y-4 mb-6"></div>
+
+    <div id="cartSummary" class="bg-white p-4 rounded-lg shadow-md mb-6 hidden">
+      <div class="flex justify-between">
+        <span>Total Items:</span>
+        <span id="totalItems">0</span>
+      </div>
+      <div class="flex justify-between">
+        <span>Subtotal:</span>
+        <span id="subtotal">0.00</span>
+      </div>
+      <div class="flex justify-between">
+        <span>Tax (10%):</span>
+        <span id="tax">0.00</span>
+      </div>
+      <div class="flex justify-between font-bold text-lg">
+        <span>Total:</span>
+        <span id="total">0.00</span>
+      </div>
+      <button id="checkoutBtn" class="w-full mt-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600">Proceed to Payment</button>
+    </div>
+  </div>
+
+  <!-- Verification Section -->
+  <div id="verificationSection" class="hidden">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">Order Summary</h2>
+    <div id="orderDetails" class="space-y-4 mb-4"></div>
+    <button id="verifyBtn" class="w-full py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700">Verify Payment</button>
+  </div>
+</div>
+
+<!-- Link external JS -->
+<script src="/static/js/sales/checkout.js"></script>
+
+</body>
+</html>

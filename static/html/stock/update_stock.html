@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Stock Prices</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #response-container pre {
+            white-space: pre-wrap;
+            word-break: break-all;
+            padding: 1rem;
+            border-radius: 0.25rem;
+            background-color: #e5e7eb;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+
+    <div class="w-full max-w-lg bg-white shadow-2xl rounded-lg p-8">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center border-b pb-4">
+            💰 Update Stock Prices
+        </h1>
+
+        <div id="stock-info" class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-6 rounded-md">
+            <p class="font-bold text-yellow-800">Updating Stock Item:</p>
+            <p id="display-stock-id" class="text-lg font-mono text-yellow-900 mt-1">Loading Stock ID...</p>
+        </div>
+
+        <form id="stock-update-form" class="space-y-5">
+            <div>
+                <label for="cost_price" class="block text-sm font-medium text-gray-700 mb-1">New Cost Price:</label>
+                <input type="number" id="cost_price" name="cost_price" required min="0" step="0.01"
+                       class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+                       placeholder="Enter new cost price (e.g., 45.99)">
+            </div>
+
+            <div>
+                <label for="selling_price" class="block text-sm font-medium text-gray-700 mb-1">New Selling Price:</label>
+                <input type="number" id="selling_price" name="selling_price" required min="0" step="0.01"
+                       class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+                       placeholder="Enter new selling price (e.g., 79.99)">
+            </div>
+
+            <button type="submit" id="submit-btn"
+                    class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-orange-600 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 transition duration-150 ease-in-out">
+                Update Prices
+            </button>
+        </form>
+
+        <div class="mt-8 pt-6 border-t border-gray-200">
+            <h2 class="text-xl font-semibold text-gray-700 mb-3">Server Response:</h2>
+            <div id="response-container" class="p-4 bg-gray-50 border border-gray-300 rounded-lg text-sm text-gray-800">
+                Awaiting price update submission...
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/stock/update_stock.js"></script>
+</body>
+</html>

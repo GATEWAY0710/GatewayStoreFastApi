@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Admin User</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #response-container pre {
+            white-space: pre-wrap;
+            word-break: break-word;
+            padding: 1rem;
+            border-radius: 0.25rem;
+            background-color: #f3f4f6;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+
+    <div class="w-full max-w-lg bg-white shadow-2xl rounded-lg p-8">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center border-b pb-4">
+            🔑 Create New Admin User
+        </h1>
+
+        <form id="create-admin-form" class="space-y-5">
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email:</label>
+                <input type="email" id="email" required
+                       class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm">
+            </div>
+            <div>
+                <label for="username" class="block text-sm font-medium text-gray-700 mb-1">Username:</label>
+                <input type="text" id="username" required
+                       class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm">
+            </div>
+            <div>
+                <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Password:</label>
+                <input type="password" id="password" required
+                       class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm">
+            </div>
+            <div>
+                <label for="confirm_password" class="block text-sm font-medium text-gray-700 mb-1">Confirm Password:</label>
+                <input type="password" id="confirm_password" required
+                       class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm">
+            </div>
+
+            <button type="submit" id="submit-btn"
+                    class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition duration-150 ease-in-out">
+                Create Admin Account
+            </button>
+        </form>
+
+        <div class="mt-8 pt-6 border-t border-gray-200">
+            <h2 class="text-xl font-semibold text-gray-700 mb-3">Server Response:</h2>
+            <div id="response-container" class="p-4 bg-gray-50 border border-gray-300 rounded-lg text-sm text-gray-800">
+                Awaiting submission...
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/user/create_admin.js"></script>
+</body>
+</html>

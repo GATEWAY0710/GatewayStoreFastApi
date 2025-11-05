@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a82792f8-2b4e-4d2e-b57d-70dd031c4624" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/GATEWAY STORE.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/controller/auth_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/controller/product_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/controller/profile_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/controller/report_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/controller/sales_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/controller/stock_entry_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/controller/user_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/token.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/persistence/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/persistence/product_repo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/persistence/profile_repo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/persistence/report_repo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/persistence/sales_repo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/persistence/stock_entry.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/persistence/user_repo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/use_case/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/use_case/models/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/use_case/models/base_response.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/use_case/models/product.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/use_case/models/profile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/use_case/models/report.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/use_case/models/sale.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/use_case/models/stock_entry.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/use_case/models/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/use_case/product_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/use_case/profile_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/use_case/report_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/use_case/sales_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/use_case/stock_entry.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/use_case/user_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/enums/role.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/dependency.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/hashing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/payment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/persistence/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/persistence/product_repo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/persistence/profile_repo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/persistence/report_repo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/persistence/sales_repo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/persistence/stock_entry.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/persistence/user_repo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/use_case/Sales_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/use_case/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/use_case/product_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/use_case/profile_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/use_case/report_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/use_case/stock_entry.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infrastructure/use_case/user_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/html/admin_dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/html/product/create_product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/html/product/list_product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/html/product/update_product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/html/product/view_product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/html/sales/checkout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/html/sales/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/html/sales/report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/html/sales/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/html/stock/create_stock.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/html/stock/get_stock.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/html/stock/list_stock.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/html/stock/update_stock.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/html/user/create_admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/html/user/list_users.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/html/user/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/html/user/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/html/user/sign_up.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/admin_dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/product/create_product.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/product/list_product.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/product/update_product.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/product/view_product.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/sales/checkout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/sales/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/sales/report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/stock/create_stock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/stock/get_stock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/stock/list_stock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/stock/update_stock.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/user/create_admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/user/list_users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/user/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/user/profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/user/sign_up.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="33mBTWuFWsf20K8sOyRRT1jumgy" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "Settings.JavaScript",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ADMIN\Desktop\GATEWAY PY\GATEWAY STORE\static\js\user" />
+      <recent name="C:\Users\ADMIN\Desktop\GATEWAY PY\GATEWAY STORE\static\js\sales" />
+      <recent name="C:\Users\ADMIN\Desktop\GATEWAY PY\GATEWAY STORE\static\js" />
+      <recent name="C:\Users\ADMIN\Desktop\GATEWAY PY\GATEWAY STORE\static\html\sales" />
+      <recent name="C:\Users\ADMIN\Desktop\GATEWAY PY\GATEWAY STORE\static\html\user" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-PY-252.26830.99" />
+        <option value="bundled-python-sdk-164cda30dcd9-0af03a5fa574-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.26830.99" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a82792f8-2b4e-4d2e-b57d-70dd031c4624" name="Changes" comment="" />
+      <created>1759912375239</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759912375239</updated>
+      <workItem from="1759912376928" duration="895000" />
+      <workItem from="1759913325635" duration="30575000" />
+      <workItem from="1759989162945" duration="1184000" />
+      <workItem from="1759990847363" duration="470000" />
+      <workItem from="1759991383879" duration="184000" />
+      <workItem from="1759991638574" duration="306000" />
+      <workItem from="1759991994389" duration="125000" />
+      <workItem from="1759992162211" duration="149000" />
+      <workItem from="1759992356488" duration="1811000" />
+      <workItem from="1760014525817" duration="1414000" />
+      <workItem from="1760016242965" duration="10940000" />
+      <workItem from="1760094302225" duration="3197000" />
+      <workItem from="1760098132306" duration="17952000" />
+      <workItem from="1760276560944" duration="34496000" />
+      <workItem from="1760550475007" duration="21259000" />
+      <workItem from="1760605216083" duration="4386000" />
+      <workItem from="1760645578434" duration="7912000" />
+      <workItem from="1760795103473" duration="36097000" />
+      <workItem from="1760897331016" duration="44591000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
